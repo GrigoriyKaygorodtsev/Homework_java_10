@@ -213,6 +213,16 @@ public class RadioTest {
     }
 
     @Test
+    public void testVolumePlus5() {
+        Radio radio = new Radio();
+        radio.setCurrentVolume(100);
+
+        int expected = 100;
+        int actual = radio.getCurrentVolume();
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
     public void testVolumeMinus() {
         Radio radio = new Radio();
         radio.setCurrentVolume(1);
