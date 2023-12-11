@@ -213,7 +213,7 @@ public class RadioTest {
     }
 
     @Test
-    public void testVolumePlus5() {
+    public void testIncreaseVolumePlus() {
         Radio radio = new Radio();
         radio.setCurrentVolume(100);
 
